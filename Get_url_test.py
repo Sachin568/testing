@@ -1,0 +1,21 @@
+import unittest
+
+from Get_url import get_repo_info
+
+
+class TestGetRepo(unittest.TestCase):
+    def test_normal_response(self):
+        expected = ['User: Sachin568', 'Repo: Django Number of commits: 1', 'Repo: embedded-projects Number of commits: 2',
+                    'Repo: helloworld Number of commits: 1', 'Repo: Image-Processing Number of commits: 2',
+                    'Repo: IoT-automation Number of commits: 2', 'Repo: Python_Repository Number of commits: 6',
+                    'Repo: testing Number of commits: 10', 'Repo: Web-controlled-robot Number of commits: 2', 
+                    'Repo: web-_programming Number of commits: 2']
+        self.assertEqual(get_repo_info(), expected)
+
+    def test_bad_user_name(self):
+        self.assertEqual(get_repo_info('Messi'), 'User: Messii')
+        self.assertEqual(get_repo_info('Mbappe'), 'User: Mbappee')
+
+
+if __name__ == '__main__':
+    unittest.main()
