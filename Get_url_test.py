@@ -13,9 +13,9 @@ class TestGetRepo(unittest.TestCase):
         self.assertEqual(get_repo_info(), expected)
 
     def test_bad_user_name(self):
-        self.assertEqual(get_repo_info('Messi'), 'User: Messii')
-        self.assertEqual(get_repo_info('Mbappe'), 'User: Mbappee')
+        self.assertEqual(get_repo_info(), 'unable to fetch commits from user')
+        
 
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(exit=False, verbosity=2)
