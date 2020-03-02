@@ -14,7 +14,7 @@ class TestGetRepo(unittest.TestCase):
             "Repo: Image-Processing Number of commits: 2",
             "Repo: IoT-automation Number of commits: 2",
             "Repo: Python_Repository Number of commits: 6",
-            "Repo: testing Number of commits: 24",
+            "Repo: testing Number of commits: 30",
             "Repo: Web-controlled-robot Number of commits: 2",
             "Repo: web-_programming Number of commits: 2",
         ]
