@@ -1,6 +1,6 @@
 import unittest
 from unittest import mock
-from Get_url import get_repo_info
+from HW05a_Mocking import get_repo_info
 
 
 class TestGetRepo(unittest.TestCase):
